@@ -95,7 +95,7 @@
   top: 28px;
   bottom: 0;
   left: 0;
-  width:160px;
+  width:250px;
   padding: 8px;
 }
 #editor, #preview { 
@@ -103,7 +103,7 @@
   top: 28px;
   right: 0;
   bottom: 0;
-  left: 160px;
+  left: 250px;
   border-left:1px solid #EEE;
 }
 #preview {
@@ -425,6 +425,7 @@ function createTree(element, editor){
         case "html":
         case "js":
         case "css":
+        case "csv":
         case "xml":
         case "json":
         case "conf":
@@ -450,6 +451,7 @@ function createTree(element, editor){
         case "jpg":
         case "gif":
         case "bmp":
+        case "ico":
         return true;
       }
     }
